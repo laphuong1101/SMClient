@@ -1,0 +1,13 @@
+﻿@model IEnumerable<SMCLient1.ServiceReference1.Student>
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+@foreach (var item in Model)
+{
+    <li>@item.StudentId - @item.Name - @item.Email - @item.Gender - @item.Desciption - @item.BirthDay</li>
+}
